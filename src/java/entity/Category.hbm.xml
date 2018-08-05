@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 4, 2018 6:53:34 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.Category" table="category" catalog="online_book" optimistic-lock="version">
+        <id name="catId" type="java.lang.Integer">
+            <column name="cat_id" />
+            <generator class="identity" />
+        </id>
+        <property name="chooseCity" type="string">
+            <column name="`choose city`" length="45" not-null="true" />
+        </property>
+        <property name="maxBillCharge" type="string">
+            <column name="`max bill charge`" length="45" not-null="true" />
+        </property>
+        <property name="freeKm" type="string">
+            <column name="`free km`" length="45" not-null="true" />
+        </property>
+        <property name="waitingCharge" type="string">
+            <column name="`waiting charge`" length="45" not-null="true" />
+        </property>
+        <property name="extraCharge" type="string">
+            <column name="`extra charge`" length="45" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

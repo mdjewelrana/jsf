@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 4, 2018 6:53:34 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.Book" table="book" catalog="online_book" optimistic-lock="version">
+        <id name="BId" type="java.lang.Integer">
+            <column name="b_id" />
+            <generator class="identity" />
+        </id>
+        <property name="CCity" type="string">
+            <column name="c_city" length="45" not-null="true" />
+        </property>
+        <property name="CCar" type="string">
+            <column name="c_car" length="45" not-null="true" />
+        </property>
+        <property name="PLocation" type="string">
+            <column name="p_location" length="45" not-null="true" />
+        </property>
+        <property name="DLocation" type="string">
+            <column name="d_location" length="45" not-null="true" />
+        </property>
+        <property name="PDate" type="timestamp">
+            <column name="p_date" length="19" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

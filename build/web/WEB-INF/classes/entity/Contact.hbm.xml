@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 4, 2018 6:53:34 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.Contact" table="contact" catalog="online_book" optimistic-lock="version">
+        <id name="DId" type="java.lang.Integer">
+            <column name="d_id" />
+            <generator class="identity" />
+        </id>
+        <property name="DName" type="string">
+            <column name="d_name" length="45" not-null="true" />
+        </property>
+        <property name="DPhone" type="string">
+            <column name="d_phone" length="11" not-null="true" />
+        </property>
+        <property name="DEmail" type="string">
+            <column name="d_email" length="45" not-null="true" />
+        </property>
+        <property name="DAddress" type="string">
+            <column name="d_address" length="45" not-null="true" />
+        </property>
+        <property name="DLisence" type="string">
+            <column name="d_lisence" length="45" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

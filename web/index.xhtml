@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+
+    <h:head>
+
+        <link href="#{request.getContextPath()}/resources/css/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="#{request.getContextPath()}/resources/css/rmn.css" rel="stylesheet" type="text/css" />
+        <link href="#{request.getContextPath()}/resources/css/style.css" rel="stylesheet" type="text/css" />
+        <title> <ui:insert name="title"> Default Title </ui:insert>    </title>
+    </h:head>    
+
+    <h:body>
+        <div class="c2">                            
+            <center>
+                <h1> <p><b>Online Car Booking</b></p> </h1> 
+            </center>
+        </div>
+        
+        <div id="all">
+            <div id="header">
+                <div id="headerC">
+                    <div class="r">
+                        <div class="c6">                            
+
+                            <h1> <a href="#{request.getContextPath()}/"> <img src="#{request.getContextPath()}/resources/img/forum.png" class="pd33"/> </a></h1> 
+
+                        </div>
+
+
+
+                        <br></br>
+
+
+
+                        <span class="clear"></span>
+                    </div>
+                </div>
+            </div>
+            <div id="nav">
+                <div id="navC">
+                    <ul>
+                        <ui:insert name="menu">                                
+                            <li> <a href="#{request.getContextPath()}/" style="color: #BB2F06">Home</a>  </li>
+                            <li> <a href="#{request.getContextPath()}/user/register.xhtml" style="color: #a53df6">Register</a>  </li>
+                            <li> <a href="#{request.getContextPath()}/user/loginpage.xhtml" style="color: #00d9ff">Login</a>  </li>
+                            <li> <a href="#{request.getContextPath()}/admin/addBooking.xhtml" style="color: #60F">Booking</a>  </li>
+                            <li> <a href="#{request.getContextPath()}/admin/addDriver.xhtml" style="color: #FFF">Admin</a>  </li>
+                            <li> <a href="#{request.getContextPath()}/admin/displayBooking.xhtml" style="color: #ec971f">Booking Details</a>  </li>
+                            <li><a href="https://www.uber.com/en-BD/drive/" style="color: yellow;">story</a></li>
+                        </ui:insert>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="main">
+            <div id="mainC">                  
+                <h:form>
+
+                    <p:messages id="msg" closable="true" autoUpdate="true"></p:messages>
+
+                    <h:panelGrid columns="2">  
+
+                        <h6> <a href="#{request.getContextPath()}/"> <img src="#{request.getContextPath()}/resources/img/new.jpg" class="pd33"/> </a></h6> 
+
+
+                    </h:panelGrid>
+
+                </h:form>
+            </div>
+
+        </div>
+
+        <div id="footer">
+            <div id="footerC">
+                <div class="pd33">
+                    copyright &copoy; All rights reserved
+                </div>                    
+            </div>
+
+        </div>
+
+
+
+
+    </h:body>
+</html>
+

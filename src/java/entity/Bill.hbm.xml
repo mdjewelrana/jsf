@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 4, 2018 6:53:34 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.Bill" table="bill" catalog="online_book" optimistic-lock="version">
+        <id name="BId" type="java.lang.Integer">
+            <column name="b_id" />
+            <generator class="identity" />
+        </id>
+        <property name="TName" type="string">
+            <column name="t_name" length="45" not-null="true" />
+        </property>
+        <property name="TPhone" type="string">
+            <column name="t_phone" length="11" not-null="true" />
+        </property>
+        <property name="TDistance" type="string">
+            <column name="t_distance" length="45" not-null="true" />
+        </property>
+        <property name="waitingTime" type="timestamp">
+            <column name="waiting_time" length="19" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

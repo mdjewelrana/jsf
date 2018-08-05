@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 4, 2018 6:53:34 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.Users" table="users" catalog="online_book" optimistic-lock="version">
+        <id name="UId" type="java.lang.Integer">
+            <column name="u_id" />
+            <generator class="identity" />
+        </id>
+        <property name="UUsername" type="string">
+            <column name="u_username" length="45" not-null="true" />
+        </property>
+        <property name="UPass" type="string">
+            <column name="u_pass" length="45" not-null="true" />
+        </property>
+        <property name="UFullname" type="string">
+            <column name="u_fullname" length="45" not-null="true" />
+        </property>
+        <property name="UEmail" type="string">
+            <column name="u_email" length="45" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
